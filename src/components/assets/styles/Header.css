@@ -1,0 +1,91 @@
+@import url('https://fonts.googleapis.com/css2?family=Rajdhani:wght@300;500&display=swap');
+
+
+:root {
+    --ash: rgba(255, 255, 255, 0.6);
+}
+
+body{
+    margin: 0;
+    padding: 0;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+    sans-serif;
+}
+a {
+    text-decoration: none;
+    color: var(--ash);
+}
+.page-header {
+    background-color: #131a27;
+    max-width: 100%;
+    min-height: 66px;
+    padding: 0px 50px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+.flex_row {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+.header-btn1 {
+    display: none;
+}
+.nav-icon {
+    font-size: 20px;
+    cursor: pointer;
+    color: var(--ash);
+    margin-right: 18px;
+}
+.nav-icon:hover {
+    color: #fff;
+}
+.nav-options {
+    list-style-type: none;
+    padding: 0;
+    color: #ffffffcc;
+    /* margin-bottom: 0; */
+}
+.nav-options li {
+    padding: 0px 15px;
+    position: relative;
+}
+.search-container {
+    border-bottom: 1px solid rgba(255, 255, 255, 0.6);
+}
+.search-container input {
+    background-color: transparent;
+    border: none;
+    font-size: 16px;
+}
+::placeholder {
+    color: rgba(255, 255, 255, 0.6);
+}
+.header-btn1, .header-btn2 {
+    padding: 6px 10px;
+    font-weight: 600;
+    background-color: #1f80e0;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    margin: 0px 14px;
+    font-size: 12px;
+    cursor: pointer;
+}
+a:hover {
+    color: #fff;
+}
+li:hover .drop-down {
+    display: block;
+}
+.drop-down {
+    display: none;
+    position: absolute;
+    min-height: 100px;
+    padding: 8px 10px;
+    border-radius: 5px;
+}

@@ -1,0 +1,25 @@
+.tray-area {
+    width: 94%;
+    margin: 0 auto;
+    margin-top: 35px;
+}
+.trays-container {
+
+}
+.trays {
+    padding-bottom: 20px;
+}
+.trays a {
+    color: #fff;
+    font-size: 20px;
+    font-weight: 500;
+}
+.trays a:hover {
+    color: #1f80e0;
+}
+.tray-card {
+    height: 200px;
+    width: 150px;
+    background-color: bisque;
+    border: none;
+}

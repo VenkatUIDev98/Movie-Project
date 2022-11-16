@@ -1,0 +1,60 @@
+.slick-prev {
+    left: 20px !important;
+}
+.slick-next {
+    right: 20px !important;
+}
+.flex_column {
+    display: flex;
+    flex-direction: column;
+}
+.slider-inner {
+    display: flex;
+    flex-direction: row;
+    height: 400px;
+    width: 93%;
+    margin: 0 auto;
+    background-color: #030b17;
+    border-radius: 10px;
+    margin-top: 12px;
+    cursor: pointer;
+}
+.inner-1 {
+    width: 37%;
+    position: relative;
+    padding: 70px 10px 0px 50px;
+}
+.inner-1 h3 {
+    font-size: 28px;
+    color: #fff;
+    font-weight: 600;
+    margin: 0;
+}
+.inner-1 h4 {
+    font-size: 16px;
+    padding-top: 14px;
+    margin: 0;
+    color: var(--ash);
+}
+.inner-1 p {
+    font-size: 16px;
+    padding-top: 10px;
+    line-height: 1.8;
+    color: #ffffffcc;
+}
+.inner-gradient {
+    width: 200px;
+    position: absolute;
+    height: 100%;
+    right: 0px;
+    left: 486px;
+    top: 0;
+    background: linear-gradient(to right, #030b17, rgba(0,0,0,0));
+}
+.inner-3 {
+    width: 67%;
+    border-radius: 5px;
+}
+.inner-3 img {
+    width: 100%;
+}
