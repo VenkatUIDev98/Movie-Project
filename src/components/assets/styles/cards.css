@@ -3,23 +3,62 @@
     margin: 0 auto;
     margin-top: 35px;
 }
-.trays-container {
-
-}
-.trays {
-    padding-bottom: 20px;
-}
-.trays a {
+.trays-container a {
     color: #fff;
     font-size: 20px;
     font-weight: 500;
+}
+.trays {
+    padding: 20px 0px  20px;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
 }
 .trays a:hover {
     color: #1f80e0;
 }
 .tray-card {
     height: 200px;
-    width: 150px;
+    width: calc(calc(100vw - 105px) / 8.5);
     background-color: bisque;
     border: none;
+    margin: 0px 5px;
+    border-radius: 5px;
+    position: relative;
+    cursor: pointer;
+}
+.tray-card img {
+    object-fit: cover;
+    height: inherit;
+    width: inherit;
+    border-radius: 5px;
+    position: absolute;
+}
+.tray-card:hover {
+    /* transition: transform .25s cubic-bezier(0.33, 0.04, 0.63, 0.93), -webkit-transform .25s cubic-bezier(0.33, 0.04, 0.63, 0.93), -o-transform .25s cubic-bezier(0.33, 0.04, 0.63, 0.93); */
+    /* transition: transform .25s cubic-bezier(0.33, 0.04, 0.63, 0.93);
+    transition: -webkit-transform .25s cubic-bezier(0.33, 0.04, 0.63, 0.93);
+    -o-transition: -o-transform .25s cubic-bezier(0.33, 0.04, 0.63, 0.93);
+    -webkit-transition: transform .25s cubic-bezier(0.33, 0.04, 0.63, 0.93);
+    -o-transition: transform .25s cubic-bezier(0.33, 0.04, 0.63, 0.93);
+    -webkit-transition: -webkit-transform .25s cubic-bezier(0.33, 0.04, 0.63, 0.93); */
+    width: 165px;
+    height: 215px;
+    transform: scale(1.1);
+    transition-duration: .5s;
+}
+img:hover {
+    object-fit: cover;
+}
+img:hover + .card-detail {
+    display: block;
+}
+.card-detail {
+    display:  none;
+    position: absolute;
+    color: #fff;
+    margin-top: 100px;
+}
+.title {
+    font-size: 12px;
 }
