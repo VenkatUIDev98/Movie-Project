@@ -12,17 +12,17 @@
     padding: 20px 0px  20px;
     display: flex;
     flex-direction: row;
-    flex-wrap: nowrap;
 }
 .trays a:hover {
     color: #1f80e0;
 }
 .tray-card {
+    display: inline-block;
     height: 200px;
     width: calc(calc(100vw - 105px) / 8.5);
     background-color: bisque;
     border: none;
-    margin: 0px 5px;
+    margin: 0px 15px;
     border-radius: 5px;
     position: relative;
     cursor: pointer;
@@ -42,10 +42,11 @@
     -webkit-transition: transform .25s cubic-bezier(0.33, 0.04, 0.63, 0.93);
     -o-transition: transform .25s cubic-bezier(0.33, 0.04, 0.63, 0.93);
     -webkit-transition: -webkit-transform .25s cubic-bezier(0.33, 0.04, 0.63, 0.93); */
-    width: 165px;
-    height: 215px;
+    width: 160px;
+    height: 210px;
     transform: scale(1.1);
     transition-duration: .5s;
+    position: relative;
 }
 img:hover {
     object-fit: cover;
@@ -58,6 +59,7 @@ img:hover + .card-detail {
     position: absolute;
     color: #fff;
     margin-top: 100px;
+    background: linear-gradient(to bottom, rgba(4,8,15,0), var(#192133), var(#192133));
 }
 .title {
     font-size: 12px;
